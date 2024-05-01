@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CAC-TRIPS / register</title>
+    <link rel="stylesheet" href="static/css/style-register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                <a href="index.html"><img class="logo-cac" src="static/img/logo.png" alt="logo"></a>
+            </h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registro</h2>
+            <form id="formRegister" method="get">
+                <div>
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" maxlength="12">
+                </div>
+                <div>
+                    <input type="text" placeholder="Apellido" id="apellido" name="Apellido" maxlength="12">
+                </div>
+                <div>
+                    <input type="email" placeholder="Correo electrónico" id="correo" name="correo">
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña" id="password" name="password" maxlength="12">
+                </div>
+                <div>
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+                <div>
+                    <select name="País" id="country">
+                        <option value="">-- Seleccione su país</option>
+                        <option value="GER"> Alemania</option>
+                        <option value="ARG">Argentina</option>
+                        <option value="AUS"> Australia</option>
+                        <option value="BOL">Bolivia</option>
+                        <option value="BRA">Brasil</option>
+                        <option value="CAN">Canadá</option>
+                        <option value="CHN">China</option>
+                        <option value="COL"> Colombia</option>
+                        <option value="ESP">España</option>
+                        <option value="USA">Estados Unidos</option>
+                        <option value="ITA">Italia</option>
+                        <option value="JPN">Japón</option>
+                        <option value="MEX">México</option>
+                        <option value="UK">Reino Unido</option>
+                        <option value="RUS">Rusia</option>
+                    </select>
+                </div>
+                <div>
+                    <input class= "check" type="checkbox" id="terms">
+                    <label for="terms">Acepto los términos y condiciones</label>
+                </div>
+                <div1>
+                    <input class="boton" type="submit" value="Continuar">
+                </div1>
+            </form>
+        </section>
+   </main>
+</body>
+</html>
