@@ -80,7 +80,7 @@ input:not(.boton), select {
     background-color: #FF9800;
     border-radius: 8px;
     border: 2px solid var(--secundary-color);
-    font-size: 2.2vw;
+    font-size: 1.8vw;
     color: #235e4f;
     cursor: pointer;
     transition: 0.5s;

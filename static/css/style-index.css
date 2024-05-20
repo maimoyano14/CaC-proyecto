@@ -37,6 +37,7 @@ body{
   
 }
 .linkLogo img{
+    height: 3.5em;
     transition: 0.5s;
     cursor: pointer;
     animation: fade In 1.1s ease;
@@ -164,7 +165,7 @@ body{
     
     /* BUSCADOR */
   .buscadorPrincipal{
-    background: linear-gradient(to  bottom , #0000004d,#00000066) ,url(static/img/Paper\ Airplanes\ in\ Orange\ -\ Small.jpg);
+    background: linear-gradient(to  bottom , #1c288bab,#79135170) ,url(static/img/Paper\ Airplanes\ in\ Orange\ -\ Small.jpg);
     color: #D9EDBF;
     height: 60vh;
     display: flex;
@@ -283,6 +284,7 @@ body{
 
 .paquetesContainer{
   padding: 1px 5px;
+  background-color: #343333;
 }
 
 .paquetesContainer .tituloSection{
