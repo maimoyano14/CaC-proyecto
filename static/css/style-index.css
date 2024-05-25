@@ -11,7 +11,7 @@
   
 }
 body{
-  background: linear-gradient(to top , #00000029,#00000038),url(static/img/fondoverdeondas.jpg);
+  background: linear-gradient(to top , #00000029,#00000038),url(/static/img/fondoverdeondas.jpg);
   
   background-position: center center;
   background-repeat: no-repeat;
@@ -165,7 +165,7 @@ body{
     
     /* BUSCADOR */
   .buscadorPrincipal{
-    background: linear-gradient(to  bottom , #1c288bab,#79135170) ,url(static/img/Paper\ Airplanes\ in\ Orange\ -\ Small.jpg);
+    background: linear-gradient(to  bottom , #1c8b7a6d,#22a70854) ,url(/static/img/coral.png);
     color: #D9EDBF;
     height: 60vh;
     display: flex;
@@ -234,7 +234,7 @@ body{
   padding: 1rem;
   margin-top: 40px;
   margin-bottom: 40px;
-  color: #D9EDBF;
+  color: #d9f0bc;
 }
 .serviciosCards{
   display: grid;
@@ -270,7 +270,7 @@ body{
   color: whitesmoke;
 }
 .container-box:hover{
-  background: linear-gradient(to  bottom , #00000002,#00000088) ,url(static/img/Paper\ Airplanes\ in\ Orange\ -\ Small.jpg);
+  background: linear-gradient(to  bottom , #00000002,#00000088) ,url(/static/img/orange-bg.jpg);
   color: #D9EDBF;
   transition: ease 0.6s;
   transform:translate(3px);
@@ -284,7 +284,7 @@ body{
 
 .paquetesContainer{
   padding: 1px 5px;
-  background-color: #343333;
+  background-color: #ffe5ba00;
 }
 
 .paquetesContainer .tituloSection{
@@ -351,7 +351,7 @@ body{
   font-size: 25px;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 .descPaquete li{
   font-size: 19px;
@@ -359,6 +359,8 @@ body{
   margin-left: 65px;
   margin-bottom: 2px;
   list-style-type: disc;
+  width: 400px;
+
 }
 /* FOOTER ESCRITORIO*/
 .footer{
@@ -468,7 +470,7 @@ body{
   .container-box{
     width: 100%;
     height: 100%;
-    background:linear-gradient(to right bottom , #00000002,#0000003a) ,url(static/img/Paper\ Airplanes\ in\ Orange\ -\ Small.jpg);
+    background:linear-gradient(to right bottom , #00000002,#0000003a) ,url(/static/img/lime.jpg);
     color: #D9EDBF;
     border: none;
     
