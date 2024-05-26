@@ -113,3 +113,11 @@ h1 {
 :hover.logo-cac {
     transform: scale(1.2);
 }
+
+.error{
+    color: red;
+    margin-bottom: 5px;
+}
+.form-control input.error, .form-select.error{
+    border: 2px solid red; 
+}

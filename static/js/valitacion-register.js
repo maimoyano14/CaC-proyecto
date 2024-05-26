@@ -16,21 +16,21 @@ const validarFormulario = (event) => {
         validation = false;
     }
     if(lastname.value.trim()===""){
-        document.querySelector("#error-lastname").textContent="Debe completar el campo apellido";
+        document.querySelector("#error-lastname").textContent="Debe completar el campo Apellido";
         lastname.classList.add("error");
         validation= false;
     }
     if(email.value.trim()===""){
-        document.querySelector("#error-email").textContent='Debe completar el campo Email';
+        document.querySelector("#error-email").textContent='Debe completar el campo Correo Electronico';
         email.classList.add('error')
         validation=false;
     }
     if(password.value.trim()===""){
-        document.querySelector("#error-password").textContent='Debe completar el campo contraseña';
+        document.querySelector("#error-password").textContent='Debe completar el campo Contraseña';
         password.classList.add('error');
         validation=false;
     }else if(password.value.length < 6 || password.value.length > 12){
-        document.querySelector("#error-password").textContent="LA contraseña debe contener entre 6 y 12 caracteres";
+        document.querySelector("#error-password").textContent="La contraseña debe contener entre 6 y 12 caracteres";
         password.classList.add("error");
         validation=false;
     }
