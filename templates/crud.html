@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaC-Paquetes</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Agregar fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+    <!-- HACEMOS REFERENCIA A UN DOCUMENTO CSS EXTERNO -->
+    <link rel="stylesheet" href="/static/css/style-index.css">
+    <link rel="stylesheet" href="/static/css/style-crud.css">
+    
+</head>
+
+<!-- Agregamos CCS en linea -->
+<body >
+    <!-- Agregar comentario -->
+    <!-- INDICAR LA CABECERA -->
+    <header class="header">
+        <!-- indica que un menu de navegacion -->
+        <nav aria-label="navHeader" class="navegacion">
+            <div class="logo">
+              <a class="linkLogo" href="/index.html"><img src="/static/img/logoOFICIAL.png" 
+              alt="img-logo" title="CAC-TRIPS">
+              </a>
+            </div>
+            
+            <ul class="listaNav">
+              <li class="listaItem"> <a class="linkNav" href="#tendencias">Tendencias</a></li>
+              <li class="listaItem"> <a class="linkNav" href="./templates/crud.html">Paquetes</a></li>
+              <li class="listaItem"> <a class="linkNavInicioSesion" href="/templates/inicio-de-sesion.html">Iniciar Sesión</a></li>
+            </ul>
+          </nav>
+
+    </header>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+        <section id="form" class="container ">
+            <h2 class="search-title">Gestión de paquetes</h2>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión de los paquetes del portal</p>
+            <form action="#"  id="form-paquete">
+                <ul class="d-flex">
+                    <li class="form-control d-flex-column">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" class="input-search" name="ciudad" id="ciudad">
+                    </li>
+                    <li class="form-control d-flex-column">
+                        <label for="dias">Días</label>
+                        <input type="text" class="input-search" name="dias" id="dias">
+                    </li>                    
+                    <li class="form-control d-flex-column">
+                        <label for="precio">Precio</label>
+                        <input type="text" class="input-search" name="precio" id="precio">
+                    </li>
+                    <li class="form-control d-flex-column">
+                        <label for="banner">Banner</label>
+                        <input type="url" class="input-search" name="banner" id="banner-form">
+                    </li>
+                    <li>              
+                        <input type="hidden"  name="id_paquete" id="id-paquete">
+                        <button class="btn-cac" type="button" id="btn-save-paquete">Agregar</button>
+                    </li>  
+                </ul>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de paquetes</h3>
+            <table id="list-table-paquetes" class="table">
+                <thead>
+                    <tr>
+                        <th>Ciudad</th>
+                        <th>Días</th>                        
+                        <th>Precio</th>
+                        <th>Banner</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-paquetes">
+                </tbody>
+            </table>
+        </section>  
+    </main>
+
+    <!-- Indicar el pie de página -->
+    <footer class="footer">
+        <nav aria-label="navFooter" class="navegacion">
+          <ul class="listaNav">
+            <li class="listaItem"><a class="linkNav" href="#">Términos y condiciones</a></li>
+            <li class="listaItem"><a class="linkNav" href="#">Preguntas frecuentes</a></li>
+            <li class="listaItem"><a class="linkNav" href="#">Ayuda</a></li>
+          </ul>
+        </nav>
+      </footer>
+
+    <!-- REFERENCIA EXTERNA -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/static/js/crud-fetch.js"></script>
+</body>
+</html>
